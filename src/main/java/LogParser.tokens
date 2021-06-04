@@ -1,0 +1,15 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+YEAR=5
+MONTH=6
+DAY=7
+DATE=8
+TIME=9
+TEXT=10
+CRLF=11
+' '=1
+'ERROR'=2
+'INFO'=3
+'DEBUG'=4

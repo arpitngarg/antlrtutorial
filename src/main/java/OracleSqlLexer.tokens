@@ -1,0 +1,15 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+COMMA=5
+WHITESPACE=6
+IDENTIFIER=7
+CRLF=8
+'SELECT'=1
+'select'=2
+'FROM'=3
+'from'=4
+','=5
+' '=6
+';'=8

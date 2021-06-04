@@ -1,0 +1,24 @@
+1. Lexer rules/definitions are the 1st step towards writing parsers. 
+2. Lexer convert the text into tokens to be input to the parser which output the parseTree or Abstract Syntax Tree(AST).
+3. Lexer Rules are written in LowerCase (though only 1st character case matters, but we follow the same for all characters for clarity.)
+4. Parser rules/definitions are in uppercase. (same as Lexer).
+5. Rules are typically written in this order: first the parser rules and then the lexer ones, although logically they are applied in the opposite order. 
+6. It’s also important to remember that lexer rules are analyzed in the order that they appear, and they can be ambiguous. 
+7. The basic syntax of a rule is easy: there is a name, a colon, the definition of the rule and a terminating semicolon
+8. ignoring a token whereever it may appear by using the syntax like below: 
+	WHITESPACE : ' ' -> skip ;
+9 Two approaches to write the grammer is : 
+	a. Top to bottom
+		- When we start with the big picture and goes down from the there. 
+		- We already familiar with the theoritical knowledge of the grammer we are writting for.
+		- Start with the big picture and gradually go down one at a time.
+		  You then define those rules and you move from the most general, abstract rules to the low-level, practical ones.
+	b. Bottom to top
+		- The bottom-up approach consists in focusing on the small elements first: 
+		- defining how the tokens are captured, how the basic expressions are defined and so on. 
+		- Then we move to higher level constructs until we define the rule representing the whole file.
+		
+10. Prefer to start from the bottom, the basic items, that are analyzed with the LEXER. And then you grow naturally from there to the structure, that is dealt with the parser. This approach permits to focus on a small piece of the grammar, build tests for that, ensure it works as expected and then move on to the next bit.
+
+11. 
+	
